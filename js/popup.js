@@ -29,7 +29,7 @@
 		if (e.keyCode !== 27) {
 			return;
 		}
-		var popup = document.querySelector('.popup.is-active');
+		var popup = document.querySelector('.popup.is-active' + ' .wow' + '.tada');
 		if (popup) {
 			closePopup(popup);
 			myLib.toggleScroll();

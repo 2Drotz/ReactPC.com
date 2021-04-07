@@ -64,7 +64,7 @@
 	<!-- Секция первого экрана -->
 	<section class="section-top">
 		<div class="container section-top__container">
-			<p class="section-top__info">Качественный товар</p>
+			<p class="section-top__info wow flipInX">Качественный товар</p>
 			<h1 class="section-top__title">Лучший магазин в Краснодаре</h1>
 			<div class="section-top__btn">
 				<button class="btn" type="button" data-scroll-to="section-catalog">Перейти</button>
@@ -77,7 +77,7 @@
 	<section class="section section-catalog">
 		<div class="container">
 			<header class="section__header">
-				<h2 class="section__title section__title_accent">Каталог</h2>
+				<h2 class="section__title section__title_accent wow fadeInUp">Каталог</h2>
 				<nav class="catalog-nav">
 					<ul class="catalog-nav__wrapper">
 						<li class="catalog-nav__item">
@@ -290,7 +290,7 @@
 		<img src="img/amr-taha-PCUq08w6s0w-unsplash.jpg" alt="jpeg" class="section-about__img">
 		<div class="container section-about__container">
 			<div class="section-about__content">
-				<h2 class="section__title section-about__title" id="about">О нас</h2>
+				<h2 class="section__title section-about__title wow fadeInRightBig" id="about">О нас</h2>
 				<p class="section-about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et commodi quis non
 					impedit laborum doloribus pariatur deleniti nobis.</p>
 			</div>
@@ -302,7 +302,7 @@
 	<section class="section section-contacts">
 		<div class="container section-contacts__container">
 			<header class="section__header">
-				<h2 class="section__title section-contacts__title">Контакты</h2>
+				<h2 class="section__title section-contacts__title wow fadeInUp">Контакты</h2>
 			</header>
 			<div class="contacts">
 				<div class="contacts__start">
@@ -348,13 +348,13 @@
 	<!-- footer start -->
 	<footer class="footer-page">
 		<div class="container">
-			<div class="footer-page__text">Дмитрий Мандрин 2021</div>
+			<div class="footer-page__text wow fadeInRightBig">Дмитрий Мандрин 2021</div>
 		</div>
 	</footer>
 	<!-- footer end -->
 
 	<!-- Всплывающие окна бургер-меню начало  -->
-	<div class="popup popup-menu">
+	<div class="popup popup-menu" data-delay="3s">
 		<div class="popup__wrapper">
 			<div class="popup__inner">
 				<div class="popup__content popup__content-fluid popup__content-centered">
@@ -491,6 +491,13 @@
 	<script src="js/header.js"></script>
 	<script src="js/popup.js"></script>
 	<script src="js/scrollTo.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+	<link rel="stylesheet" href="css/animate.css">
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+
+	</script>
 </body>
 
 </html>
