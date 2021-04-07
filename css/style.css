@@ -657,6 +657,7 @@ img {
 .btn__item--accent:hover {
   color: #fff;
   background: #ec2b3f;
+  border-color: #ec2b3f;
 }
 .btn__item--accent:active {
   transform: scale(0.95);
