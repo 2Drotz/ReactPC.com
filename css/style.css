@@ -648,17 +648,17 @@ img {
   background: #ffa550;
   color: #fff;
 }
-.header-page__btn--accent {
+.btn__item--accent {
   margin-bottom: 30px;
   border-color: #ec2b3f;
   color: #ec2b3f;
   font-weight: 700;
 }
-.header-page__btn--accent:hover {
+.btn__item--accent:hover {
   color: #fff;
   background: #ec2b3f;
 }
-.header-page__btn--accent:active {
+.btn__item--accent:active {
   transform: scale(0.95);
 }
 .popup__title {
