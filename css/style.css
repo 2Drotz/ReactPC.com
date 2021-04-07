@@ -936,11 +936,8 @@ img {
   .header-page__phone {
     display: none;
   }
-  .header-page__btn {
+  .btn__item {
     display: none;
-  }
-  .header-page__btn .is-active {
-    display: inline-block;
   }
   .form__btn {
     width: 100%;
