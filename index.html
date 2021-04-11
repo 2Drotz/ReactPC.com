@@ -81,22 +81,22 @@
 				<nav class="catalog-nav">
 					<ul class="catalog-nav__wrapper">
 						<li class="catalog-nav__item">
-							<button class="catalog-nav__btn is-active" type="button">все</button>
+							<button class="catalog-nav__btn is-active" type="button" data-filter="all">все</button>
 						</li>
 						<li class="catalog-nav__item">
-							<button class="catalog-nav__btn" type="button">процессоры</button>
+							<button class="catalog-nav__btn" type="button" data-filter="proseccor">процессоры</button>
 						</li>
 						<li class="catalog-nav__item">
-							<button class="catalog-nav__btn" type="button">видеокарты</button>
+							<button class="catalog-nav__btn" type="button" data-filter="videocart">видеокарты</button>
 						</li>
 						<li class="catalog-nav__item">
-							<button class="catalog-nav__btn" type="button">платы</button>
+							<button class="catalog-nav__btn" type="button" data-filter="plats">платы</button>
 						</li>
 					</ul>
 				</nav>
 			</header>
 			<div class="catalog">
-				<div class="catalog__item">
+				<div class="catalog__item" data-category="videocart">
 					<div class="product catalog__product">
 						<img src="img/rtx2080.jpg" alt="" class="product__img">
 						<div class="product__content">
@@ -115,15 +115,15 @@
 							</div>
 							<div class="product__bottom">
 								<div class="product__price">
-									<span class="product__price-value"></span>
-									<span class="product__currency">41250&#8381;</span>
+									<span class="product__price-value">41250</span>
+									<span class="product__currency">&#8381;</span>
 								</div>
 								<button class="btn product__btn" type="button" data-popup="popup-order">Купить</button>
 							</div>
 						</footer>
 					</div>
 				</div>
-				<div class="catalog__item">
+				<div class="catalog__item" data-category="plats">
 					<div class="product catalog__product">
 						<img src="img/asus.jpg" alt="" class="product__img">
 						<div class="product__content">
@@ -143,15 +143,15 @@
 							</div>
 							<div class="product__bottom">
 								<div class="product__price">
-									<span class="product__price-value"></span>
-									<span class="product__currency">36500&#8381;</span>
+									<span class="product__price-value">36500</span>
+									<span class="product__currency">&#8381;</span>
 								</div>
 								<button class="btn product__btn" type="button" data-popup="popup-order">Купить</button>
 							</div>
 						</footer>
 					</div>
 				</div>
-				<div class="catalog__item">
+				<div class="catalog__item" data-category="proseccor">
 					<div class="product catalog__product">
 						<img src="img/i9.png" alt="" class="product__img">
 						<div class="product__content">
@@ -169,15 +169,15 @@
 							</div>
 							<div class="product__bottom">
 								<div class="product__price">
-									<span class="product__price-value"></span>
-									<span class="product__currency">33900&#8381;</span>
+									<span class="product__price-value">33900</span>
+									<span class="product__currency">&#8381;</span>
 								</div>
 								<button class="btn product__btn" type="button" data-popup="popup-order">Купить</button>
 							</div>
 						</footer>
 					</div>
 				</div>
-				<div class="catalog__item">
+				<div class="catalog__item" data-category="proseccor">
 					<div class="product catalog__product">
 						<img src="img/i9.png" alt="" class="product__img">
 						<div class="product__content">
@@ -195,15 +195,15 @@
 							</div>
 							<div class="product__bottom">
 								<div class="product__price">
-									<span class="product__price-value"></span>
-									<span class="product__currency">31599&#8381;</span>
+									<span class="product__price-value">31599</span>
+									<span class="product__currency">&#8381;</span>
 								</div>
 								<button class="btn product__btn" type="button" data-popup="popup-order">Купить</button>
 							</div>
 						</footer>
 					</div>
 				</div>
-				<div class="catalog__item">
+				<div class="catalog__item" data-category="videocart">
 					<div class="product catalog__product">
 						<img src="img/rtx2080.jpg" alt="" class="product__img">
 						<div class="product__content">
@@ -222,15 +222,15 @@
 							</div>
 							<div class="product__bottom">
 								<div class="product__price">
-									<span class="product__price-value"></span>
-									<span class="product__currency">41250&#8381;</span>
+									<span class="product__price-value">41250</span>
+									<span class="product__currency">&#8381;</span>
 								</div>
 								<button class="btn product__btn" type="button" data-popup="popup-order">Купить</button>
 							</div>
 						</footer>
 					</div>
 				</div>
-				<div class="catalog__item">
+				<div class="catalog__item" data-category="plats">
 					<div class="product catalog__product">
 						<img src="img/asus.jpg" alt="" class="product__img">
 						<div class="product__content">
@@ -250,15 +250,15 @@
 							</div>
 							<div class="product__bottom">
 								<div class="product__price">
-									<span class="product__price-value"></span>
-									<span class="product__currency">21999&#8381;</span>
+									<span class="product__price-value">21999</span>
+									<span class="product__currency">&#8381;</span>
 								</div>
 								<button class="btn product__btn" type="button" data-popup="popup-order">Купить</button>
 							</div>
 						</footer>
 					</div>
 				</div>
-				<div class="catalog__item">
+				<div class="catalog__item" data-category="videocart">
 					<div class="product catalog__product">
 						<img src="img/rtx2080.jpg" alt="" class="product__img">
 						<div class="product__content">
@@ -277,15 +277,15 @@
 							</div>
 							<div class="product__bottom">
 								<div class="product__price">
-									<span class="product__price-value"></span>
-									<span class="product__currency">19500&#8381;</span>
+									<span class="product__price-value">19500</span>
+									<span class="product__currency">&#8381;</span>
 								</div>
 								<button class="btn product__btn" type="button" data-popup="popup-order">Купить</button>
 							</div>
 						</footer>
 					</div>
 				</div>
-				<div class="catalog__item">
+				<div class="catalog__item" data-category="proseccor">
 					<div class="product catalog__product">
 						<img src="img/i9.png" alt="" class="product__img">
 						<div class="product__content">
@@ -303,8 +303,8 @@
 							</div>
 							<div class="product__bottom">
 								<div class="product__price">
-									<span class="product__price-value"></span>
-									<span class="product__currency">38000&#8381;</span>
+									<span class="product__price-value">38000</span>
+									<span class="product__currency">&#8381;</span>
 								</div>
 								<button class="btn product__btn" type="button" data-popup="popup-order">Купить</button>
 							</div>
@@ -337,7 +337,7 @@
 			</header>
 			<div class="contacts">
 				<div class="contacts__start">
-					<div class="contacts__map"></div>
+					<div class="contacts__map" id="ymap"></div>
 				</div>
 				<div class="contacts__end">
 					<div class="contacts__item">
@@ -444,14 +444,14 @@
 					<div class="order">
 						<img class="order__img" src="img/1025933114.jpg" alt="">
 						<h3 class="order__title">
-							<span>Видеокарта</span>
-							<span>850</span> &#8381;
+							<span class="order-product-title">Видеокарта</span>
+							<span class="order-product-price">850</span> &#8381;
 						</h3>
 						<p class="order__model">1060Ti</p>
 						<form action="#" class="form">
-							<input type="hidden" name="видеокарта">
-							<input type="hidden" name="цена">
-							<input type="hidden" name="модель">
+							<input class="order-info-title" type="hidden" name="видеокарта">
+							<input class="order-info-price" type="hidden" name="цена">
+							<input class="order-info-model" type="hidden" name="модель">
 							<input class="form__input" type="text" name="имя" placeholder="Имя" required></input>
 							<input class="form__input" type="text" name="телефон" placeholder="Телефон" required></input>
 							<input class="form__input" type="text" name="адрес" placeholder="Адрес" required></input>
@@ -518,10 +518,15 @@
 		</div>
 	</div>
 	<!-- ОКНО ERROR -->
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
 	<script src="js/myLib.js"></script>
 	<script src="js/header.js"></script>
 	<script src="js/popup.js"></script>
 	<script src="js/scrollTo.js"></script>
+	<script src="js/catalog.js"></script>
+	<script src="js/product.js"></script>
+	<script src="js/map.js"></script>
 	<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
 	<link rel="stylesheet" href="css/animate.css">
 	<script src="js/wow.min.js"></script>
