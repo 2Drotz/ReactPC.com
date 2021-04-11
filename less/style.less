@@ -1,6 +1,7 @@
 @color-grey: #1f1f1f;
-@color-orange: #ffa550;
-@color-red: #ec2b3f;
+@color-red: #d01257;
+@color-orange: #fda403;
+@color-green: #00ad7c;
 
 //font-family: "Monserat", sans-serif;
 //font-family: 'Roboto', sans-serif;
@@ -18,7 +19,7 @@ body {
 	font-weight: 300;
 	font-size: 16px;
 	line-height: 1.375;
-	color: #1f1f1f;
+	color: @color-grey;
 }
 img{
 	max-width: 100%;
@@ -30,7 +31,7 @@ img{
 .gradient{
 	width: 100%;
 	height: 0.63em;
-	background: linear-gradient(90deg, @color-red, @color-orange);
+	background: linear-gradient(90deg, #fdff77, @color-green);
 }
 /*navigator*/
 .header-page {
@@ -39,7 +40,7 @@ img{
 	left: 0;
 	width: 100%;
 	z-index: 5;
-	background-color: rgba(10,10,10,0.9);
+	background-color: rgba(255, 255, 255, 0.9);
 	padding: 9px;
 	overflow: hidden;
 	transition: padding 1s;
@@ -72,7 +73,7 @@ img{
 }
 .header-page__li {}
 .header-page__link {
-	color: #ccc;
+	color: @color-grey;
 	text-decoration: none;
 	display: block;
 	padding: 15px 30px;
@@ -81,16 +82,16 @@ img{
 	font-weight: 900;
 	text-transform: uppercase;
 	position: relative;
-	transition: color .3s, background-color .3s, opacity .3s, padding 0.3s;
+	transition: color .1s, background-color .3s, opacity .3s, padding 0.3s;
 	&:hover{
-		color: #1f1f1f;
+		color: #fff;
 	}
 	&::before {
 		content: "";
 		position: absolute;
 		top: 50%;
 		left: 0;
-		background-color: #ccc;
+		background-color: @color-green;
 		width: 100%;
 		height: calc(100% + 40px);
 		transform: translateY(-50%);
@@ -110,17 +111,17 @@ img{
 .phone__item {
 	font-family: "Monserat",sans-serif;
 	font-weight: 700;
-	color: #fff;
+	color: @color-grey;
 	margin-right: 9px;
 	text-decoration: none;
 	display: inline-block;
-	border: 2px solid #fff;
+	border: 2px solid @color-green;
 	padding: 8px 16px;
 	border-radius: 22px;
 	transition: color .3s, background .3s, opacity .3s;
 	&:hover{
-		color: #1f1f1f;
-		background-color:#fff;
+		color: @color-grey;
+		background-color:@color-green;
 	}
 	&:active{
 		opacity: 0.8;
@@ -129,18 +130,18 @@ img{
 .btn__item {
 	font-family: "Monserat",sans-serif;
 	font-weight: 700;
-	color: #fff;
+	color: @color-grey;
 	outline: none;
 	padding: 9px 16px;
 	border-radius: 22px;
 	background: transparent;
-	border: 2px solid #fff;
+	border: 2px solid @color-red;
 	transition: color .3s, background .3s;
 	cursor: pointer;
 	&:hover{
-		color: #1f1f1f;
-		background: @color-orange;
-		border-color: @color-orange;
+		color: #fff;
+		background: @color-red;
+		border-color: @color-red;
 	}
 }
 .btn-menu {
@@ -159,7 +160,7 @@ img{
 .btn-menu__inner,
 .btn-menu__inner::before,
 .btn-menu__inner::after {
-	background: #fff;
+	background: #1f1f1f;
 	height: 4px;
 	width: 100%;
 	border-radius: 5px;
@@ -187,7 +188,7 @@ img{
 .section-top {
 	height: 100vh;
 	min-height: 600px;
-	background: #1f1f1f url(../img/bg-comp.jpg) no-repeat center;
+	background: @color-grey url(../img//bg-rgb2.jpg) no-repeat center;
 	background-size: cover;
 	color: #fff;
 	display: flex;
@@ -201,7 +202,7 @@ img{
 		position: absolute;
 		top: 0;
 		left: 0;
-		background: rgba(0,0,0,0.5);
+		background: rgba(0,0,0,0.36);
 		width: 100%;
 		height: 100%;
 	}
@@ -231,7 +232,7 @@ img{
 	margin: 0 0 35px;
 }
 .btn {
-	background-color: #ec2b3f;
+	background-color: @color-red;
 	color: white;
 	display: inline-block;
 	padding: 18px 20px;
@@ -245,16 +246,17 @@ img{
 	cursor: pointer;
 	text-align: center;
 	letter-spacing: .02em;
-	box-shadow: 0px 0px 38px 0px rgba(212,66,80,0.8);
-	transition: color .3s, background-color .3s, opacity .3s, transform .2s;
+	box-shadow: 0px 2px 30px 0px rgba(238, 20, 67, 0.911);
+	transition: color .3s, background-color .3s, opacity .3s, transform .2s, box-shadow .3s;
 	outline: none;
 	&:hover {
-		background-color: #ec2b3f;
+		background-color: @color-green;
+		box-shadow: 0px 2px 38px 0px rgba(11, 138, 68, 0.911);
 
 	}
 	&:active {
 		opacity: 0.8;
-		transform: scale(1.1, 0.9);
+		transform: scale(1.02, 0.98);
 	}
 }
 
@@ -271,9 +273,9 @@ img{
 		font-family: "Monserat", sans-serif;
 		font-weight: 900;
 		margin: 0 auto 40px;
-		color: #1f1f1f;
+		color: @color-grey;
 		&_accent{
-		color: @color-orange;
+		color: @color-green;
 		}
 	}
 }
@@ -313,7 +315,7 @@ img{
 		padding: 14px;
 		text-align: center;
 		min-width: 150px;
-		font-family: "Monserat", sans-serif;
+		font-family: "Roboto", sans-serif;
 		font-size: 18px;
 		font-weight: 900;
 		color: #e6e6e6;
@@ -386,6 +388,7 @@ img{
 
 	}
 	&__description {
+		font-size: 14px;
 		margin: 0;
 		color: #9f9f9f;
 	}
@@ -409,10 +412,10 @@ img{
 		font-family: "Monserat", sans-serif;
 		font-weight: 900;
 		padding: 13px 33px;
-		color: #e6e6e6;
+		color: #d3d3d3;
 		outline: none;
 		&.is-active{
-			color: #a2a2a2;
+			color: #a1a1a1;
 			box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
 		}
 	}
@@ -429,11 +432,12 @@ img{
 	}
 	&__currency {}
 	&__btn {
+		background: #df124f;
 		box-shadow: none;
-		width: 200px;
+		width: 180px;
 		padding: 14px 20px;
 		&:hover{
-			background: #e00030;
+			background: @color-green;
 		}
 	}
 }
@@ -498,10 +502,10 @@ img{
 		&::before{
 			content: "";
 			position: absolute;
-			background: url(../img/komp.png);
+			background: url(../img/FIFA_18_Assets-Lines-Magenta.png);
 			background-size: cover;
-			width: 380px;
-			height: 380px;
+			width: 500px;
+			height: 600px;
 			bottom: -50px;
 			right: -60px;
 		}
@@ -510,10 +514,6 @@ img{
 	&__title {
 		margin-bottom: 0;
 	}
-}
-.container {
-}
-.page-title {
 }
 .contacts {
 	display: flex;
@@ -577,16 +577,22 @@ img{
 
 .footer-page {
 	background: linear-gradient(90deg, @color-grey, #2f2f2f);
-	padding: 25px 0;
+	padding: 20px 0;
+	font-family: "Roboto", sans-serif;
 	&__text {
 	text-align: center;
-	font-family: "Monserat", sans-serif;
 	color: rgba(255,255,255,0.3);
 	font-weight: 900;
-	font-size: 18px;
+	font-size: 14px;
 	}
-}
-.container {
+	&__info{
+
+	}
+	&__link{
+		margin: 0 10px;
+		text-decoration: none;
+		color: @color-green;
+	}
 }
 
 // footer end
@@ -690,7 +696,7 @@ img{
 	font-family: "Monserat", sans-serif;
 	font-weight: 900;
 	margin: 0 auto 40px;
-	color: #1f1f1f;
+	color: @color-grey;
 }
 .close {
 	position: absolute;
@@ -741,7 +747,7 @@ img{
 		text-align: center;
 		transition: background .3s, color .3s, opacity .3s;
 		&:hover{
-			background: @color-orange;
+			background: @color-red;
 			color: #fff;
 		}
 		&:active{
@@ -751,10 +757,10 @@ img{
 }
 .phone {
 	&__item--accent {
-		border-color:@color-orange;
-		color: @color-orange;
+		border-color:@color-red;
+		color: @color-red;
 		&:hover{
-			background: @color-orange;
+			background: @color-red;
 			color: #fff;
 		}
 	}
@@ -843,7 +849,7 @@ img{
 		border: 3px solid transparent;
 		outline: none;
 		&:focus{
-			border-color: #ffa650;
+			border-color: @color-red;
 		}
 	}
 	&__btn {
